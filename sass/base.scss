@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f9f9;
+  font-family: "lato", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #1b1d1f;
+  padding-bottom: 50px;
+}
+h1, h2, h3, h4 {
+  font-family: 'helvetica-bold', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 52px;
+  &.h-header {
+    font-size: 48px;
+    font-family: 'lato-bold',sans-serif;
+    line-height: 1.2;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  &.group-name {
+    font-size: 32px;
+    font-family: 'lato-bold', sans-serif;
+    margin-bottom: 25px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+  &.form-title {
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  a {
+    font-size: 20px;
+    color: #1f2123;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+  }
+}
+h6   {
+  font-family: 'lato-bold', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+b {
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+}
+i {
+  font-style: italic;
+}
+
+/* GRID */
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: auto;
+  padding:0 15px;
+  position: relative;
+}
+.flex-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+}
+
+.col-3 {
+  width: 33.33%;
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+}
+
+
+/* ALIGN TEXT */
+.text-right {
+  text-align: right;
+}
+.text-center   {
+  text-align: center;
+}
+small {
+  font-size: 12px;
+  display: block;
+}
+
+/* SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eef0f2;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3c318d;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b13a72;
+}
+/**************************************************************** BUTTONS AND LINKS****************************************************************/
+a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: .2s;
+  &.blue-link {
+    color: #0054f0;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #003eb2;
+    }
+  }
+}
+
+.btn {
+  transition: .2s;
+  cursor: pointer;
+  outline: none;
+  font-family: "lato", sans-serif;
+}
+.btn-blue {
+  background: #0054f0;
+  color: #fff;
+  border: 1px solid #efefef;
+  -webkit-box-shadow: 0 0 1px #a4a4a4;
+  box-shadow: 0 0 1px #a4a4a4;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #003eb2;
+  }
+
+}
+.btn-white {
+  width: 100%;
+  font-size: 14px;
+  padding: 15px;
+  background: #fff;
+  color: #0054f0;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #0054f0;
+    color: #fff;
+  }
+}
+
+/**************************************************************** INPUTS ****************************************************************/
+
+
+/********************************************* MEDIA *********************************************/
+
+
+@media all and (max-width: 1200px) {
+
+}
+
+
+@media all and (max-width: 991px) {
+  h1 {
+    font-size: 66px;
+  }
+  h2 {
+    font-size: 48px;
+    &.h-header {
+      font-size: 46px;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    &.group-name {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  h4 {
+    font-size: 22px;
+  }
+
+}
+@media all and (max-width: 767px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col-3{
+    flex: 0 0 100%;
+  }
+  h1 {
+    font-size: 62px;
+  }
+  h2 {
+    font-size: 42px;
+    &.h-header {
+      font-size: 38px;
+    }
+  }
+
+  h3 {
+    font-size: 25px;
+    &.group-name {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+    &.form-title {
+      padding-top: 10px;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+
+}
+@media all and (max-width: 400px) {
+
+}
