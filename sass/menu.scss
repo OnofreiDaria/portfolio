@@ -1,0 +1,24 @@
+.menu {
+  padding: 20px 0;
+  li {
+    display: inline-block;
+    padding: 5px;
+  }
+  a {
+    font-family: 'silom', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 5px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  background: #3c318d;
+  position: fixed;
+  z-index: 999;
+}

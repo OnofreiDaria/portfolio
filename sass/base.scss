@@ -3,61 +3,25 @@
 }
 body {
   background-color: #f9f9f9;
-  font-family: "lato", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
   line-height: 1.6;
   overflow-x: hidden;
-  color: #1b1d1f;
-  padding-bottom: 50px;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
-  font-family: 'helvetica-bold', sans-serif;
-  line-height: 1.5;
-  font-weight: 700;
+  font-family: "silom", sans-serif;
+  line-height: 1.1;
+  font-weight: 600;
 }
 h1 {
-  font-size: 72px;
+  font-size: 62px;
 }
 h2 {
-  font-size: 52px;
-  &.h-header {
-    font-size: 48px;
-    font-family: 'lato-bold',sans-serif;
-    line-height: 1.2;
-  }
+  font-size: 50px;
 }
 
-h3 {
-  font-size: 30px;
-  &.group-name {
-    font-size: 32px;
-    font-family: 'lato-bold', sans-serif;
-    margin-bottom: 25px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-  &.form-title {
-    font-family: 'lato', sans-serif;
-    font-weight: 500;
-    padding-top: 20px;
-  }
-  a {
-    font-size: 20px;
-    color: #1f2123;
-    font-family: 'lato', sans-serif;
-    font-weight: 700;
-  }
-}
-h6   {
-  font-family: 'lato-bold', sans-serif;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
 b {
   font-weight: 700;
 }
@@ -69,6 +33,10 @@ i {
 }
 
 /* GRID */
+section {
+  padding: 80px 0;
+  height: 100vh;
+}
 .container {
   max-width: 1180px;
   width: 100%;

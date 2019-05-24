@@ -1,6 +1,146 @@
 main {
   width: 100%;
-  height: 100vh;
   background: url(../img/bg.jpg) no-repeat top;
   background-size: cover;
+}
+#top,
+#bottom {
+  width: 100%;
+  position: absolute;
+  height: 50%;
+
+  &:before {
+    position: absolute;
+    right: 20px;
+    content: '';
+    width:0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    animation: topBorder 1s linear forwards;
+    animation-delay: 1s;
+  }
+}
+#top {
+  top: 0;
+  &:before {
+    top: 0;
+  }
+}
+#bottom {
+  bottom: 0;
+  &:before {
+    bottom: 0;
+  }
+}
+
+
+@keyframes bounceInLeft {
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.my-photo {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+}
+.content {
+  position: relative;
+  height: 400px;
+  padding: 2em;
+  &:after {
+    position: absolute;
+    top:0;
+    right: -32px;
+    content: '';
+    width:20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: rightBorder 1s linear forwards;
+  }
+}
+@keyframes rightBorder {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.box {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  h1 {
+    position: absolute;
+    top: 23%;
+    left: -25%;
+    animation: bounceInLeft 2s ease-out;
+  }
+  &:before,
+  &:after{
+    position: absolute;
+    left: -8px;
+    content: '';
+    width:20px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    animation: leftBorder 1s linear forwards;
+    animation-delay: 2s;
+  }
+  &:after {
+    top:0;
+  }
+  &:before {
+    bottom:0;
+  }
+}
+
+
+@keyframes leftBorder {
+  0% {
+    height:0;
+    width: 0;
+  }
+  50% {
+    height: 15%;
+    width: 10px;
+  }
+  100% {
+    height: 25%;
+    width: 20px;
+  }
+}
+
+@keyframes topBorder {
+  0% {
+    height:0;
+    width: 0;
+  }
+  50% {
+    height: 10px;
+    width: 50%;
+  }
+  100% {
+    height: 20px;
+    width: 100%;
+  }
 }
