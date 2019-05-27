@@ -145,11 +145,18 @@ main {
   }
 }
 .about_describe {
-  position: relative;
   max-width: 900px;
   margin: auto;
-  background: #831657;
   padding: 30px 30px 50px;
+}
+.work {
+  height: 200px;
+  margin:15px 5px;
+}
+.work,
+.about_describe {
+  position: relative;
+  background: #831657;
   z-index: 3;
   box-shadow: 2px 2px 0 0 #d21551;
   &:before {
@@ -173,7 +180,3 @@ main {
     z-index: -1;
   }
 }
-// #5e0c59
-// #831657
-// #d21551
-//0e0f61
