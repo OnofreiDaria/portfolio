@@ -11,22 +11,25 @@ body {
   scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
-  font-family: "silom", sans-serif;
+  font-family: "enigma", sans-serif;
   line-height: 1.1;
-  font-weight: 600;
+  //font-weight: 600;
 }
 h1 {
   font-size: 62px;
 }
 h2 {
   font-size: 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
 }
 
 b {
   font-weight: 700;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 i {
   font-style: italic;
