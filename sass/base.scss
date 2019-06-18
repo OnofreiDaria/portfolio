@@ -34,7 +34,10 @@ p {
 i {
   font-style: italic;
 }
-
+li {
+  padding: 10px 0;
+  text-align: left;
+}
 /* GRID */
 section {
   padding: 80px 0;
@@ -69,7 +72,11 @@ section {
   flex: 0 0 32.33%;
   padding: 0 15px;
 }
-
+.col-2 {
+  width: 50%;
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
 
 /* ALIGN TEXT */
 .text-right {
